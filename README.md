@@ -6,8 +6,8 @@
 | 课程配套教程（1~6章） | [nand2tetris作者讲解](https://www.coursera.org/learn/build-a-computer) |
 | --------------------- | ------------------------------------------------------------ |
 | **课程配套网站**      | [**nand2tetris官网**](https://www.nand2tetris.org/)          |
-| 课程PPT/PDF           | []()                                                         |
-|                       |                                                              |
+| **课程PPT/PDF**       | []()                                                         |
+| 书籍                  | [英文原版]()                                                 |
 
 
 
