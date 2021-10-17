@@ -7,7 +7,7 @@
 | --------------------- | ------------------------------------------------------------ |
 | **课程配套网站**      | [**nand2tetris官网**](https://www.nand2tetris.org/)          |
 | **课程PPT/PDF**       | []()                                                         |
-| 书籍                  | [英文原版]()                                                 |
+| 书籍                  | [英文原版](https://github.com/coderhare/nand2tetris/blob/main/Documents/Books/The%20Elements%20of%20Computing%20Systems%20%20Building%20a%20Mod(1)(2).pdf)   [中文高清]()                                             |
 
 
 
