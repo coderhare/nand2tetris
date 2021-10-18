@@ -4,7 +4,7 @@
 
 
 
-<img src="/Users/wocaibujiaoquanmei/iCloud 云盘（归档）/GitHub/nand2tetris/Images/hack_contents.png" alt="image-20211011201932143" style="zoom:50%;" />
+<img src="https://github.com/coderhare/nand2tetris/blob/main/Images/hack_contents.png" />
 
 **内存地址空间的分布：（在hack computer的架构中，指令内存和数据内存是分割开的）**
 
@@ -31,11 +31,11 @@
 
 **`C指令`各位域详解：**
 
-![image-20211011190905670](/Users/wocaibujiaoquanmei/Library/Application Support/typora-user-images/image-20211011190905670.png)
+![image-20211011190905670](https://github.com/coderhare/nand2tetris/blob/main/Images/C_instruction.png)
 
 **一些预定义的标签：**
 
-![image-20211011201712082](/Users/wocaibujiaoquanmei/iCloud 云盘（归档）/GitHub/nand2tetris/Images/hack_builtin_symbols.png)
+![image-20211011201712082](https://github.com/coderhare/nand2tetris/blob/main/Images/hack_builtin_symbols.png)
 
 
 
@@ -47,17 +47,17 @@
 
 **I/O内存映射**
 
-<img src="/Users/wocaibujiaoquanmei/iCloud 云盘（归档）/GitHub/nand2tetris/Images/hack_screenMemory_map.png" alt="image-20211012114001565" style="zoom: 33%;" />
+<img src="https://github.com/coderhare/nand2tetris/blob/main/Images/hack_screenMemory_map.png" />
 
-我们的`RAM​`是16位的，使用`2^{13}*16`个位，映射为屏幕的`256 * 512​`个点阵
+我们的`RAM`是16位的，使用`2^{13}*16`个位，映射为屏幕的`256 * 512`个点阵
 
 
 
 **键盘**
 
-预定义宏`@KBD​`代表键盘的占用内存的起始位置，实际上该内存的大小仅为1。
+预定义宏`@KBD`代表键盘的占用内存的起始位置，实际上该内存的大小仅为1。
 
-<img src="/Users/wocaibujiaoquanmei/iCloud 云盘（归档）/GitHub/nand2tetris/Images/hack_character_set.png" alt="image-20211012221144778" style="zoom: 50%;" />
+<img src="https://github.com/coderhare/nand2tetris/blob/main/Images/hack_character_set.png" />
 
 **变量的抽象**
 
@@ -69,6 +69,6 @@
 
 #### 源码
 
-`Mulit.asm`: [这里]()
+`Mulit.asm`: [这里](https://github.com/coderhare/nand2tetris/blob/main/Documents/Code/Mult.asm)
 
-`Fill.asm`：[这里]()
+`Fill.asm`：[这里](https://github.com/coderhare/nand2tetris/blob/main/Documents/Code/Fill.asm)
