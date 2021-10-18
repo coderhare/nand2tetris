@@ -25,7 +25,7 @@
 |                        |           |
 |                        |           |
 |                        |           |
-| 第七章：Hack Assembler | [note7]() |
+| 第六章：Hack Assembler | [note6]() |
 |                        |           |
 |                        |           |
 |                        |           |
