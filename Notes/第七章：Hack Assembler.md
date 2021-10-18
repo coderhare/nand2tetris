@@ -39,7 +39,7 @@
 
 该项目由本人于`Clion`下采用`C++17`和`Qt5`开发。
 
-代码放在[这里]()了,如果感兴趣可以看看。
+代码放在[这里](https://github.com/coderhare/nand2tetris/tree/main/Documents/Code/Assembler_Dev)了,如果感兴趣可以看看。
 
 ### 效果
 
