@@ -1,4 +1,4 @@
-# 第四章：Hack Machine language
+# 第四章：Hack Machine language
 
 > 本章内容：了解一台Computer所需要的所有基本部件：CPU，ROM，RAM，I/O deivices。然后完成部件，并且最后搭建成hack computer。
 
