@@ -23,7 +23,7 @@
 |                        |           |
 |                        |           |
 |                        |           |
-|                        |           |
+| 第四章：Hack Machine language                       |  [note4](https://github.com/coderhare/nand2tetris/blob/main/Notes/%10%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%10Hack%20Machine%20language.md)         |
 |                        |           |
 | 第六章：Hack Assembler | [note6]() |
 |                        |           |
