@@ -18,3 +18,8 @@
 
 
 
+
+### 演示
+
+**自制简陋汇编器**
+![演示效果](https://github.com/coderhare/nand2tetris/blob/main/Documents/%E6%BC%94%E7%A4%BA/Kapture%202021-10-18%20at%2014.00.41.gif)
