@@ -1,0 +1,8 @@
+CHIP Add{
+    IN a, b;
+    OUT add, now;
+PARTS:
+    Xor(a = a, b = b, out = now);
+    And(a = a, b = b, out = out1);
+    And(a = true, b = out1, out = add);
+}
