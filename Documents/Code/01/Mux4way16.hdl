@@ -1,0 +1,55 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux4Way16.hdl
+
+/**
+ * 4-way 16-bit multiplexor:
+ * out = a if sel == 00
+ *       b if sel == 01
+ *       c if sel == 10
+ *       d if sel == 11
+ */
+CHIP Mux4Way16 {
+
+  IN a[16], b[16], c[16], d[16], sel[2];
+
+  OUT out[16];
+
+
+
+  PARTS:
+
+  // Put your code here:
+  // I can design another chips to satisfy my need.
+
+
+  //a
+    Xor(a = true, b = sel[0], out = Anda1);
+    Xor(a = true, b = sel[1], out = Anda2);
+    And(a = Anda1, b = Anda2, out = And1);
+    And16to1(a = And1, b = true, out = cana);
+    And16(a = a, b = cana, out = outa);
+  //b
+    Xor(a = false, b = sel[0], out = Xorb1);
+    Xor(a = true, b = sel[1], out = Xorb2);
+    And(a = Xorb1, b = Xorb2, out = And2);
+    And16to1(a = And2, b = true, out = canb);
+    And16(a = b, b = canb, out = outb);
+  //c
+    Xor(a = true, b = sel[0], out = Xorc1);
+    Xor(a = false, b = sel[1], out = Xorc2);
+    And(a = Xorc1, b = Xorc2, out = And3);
+    And16to1(a = And3, b = true, out = canc);
+    And16(a = c, b = canc, out = outc);
+  //d
+    Xor(a = false, b = sel[0], out = Xord1);
+    Xor(a = false, b = sel[1], out = Xord2);
+    And(a = Xord1, b = Xord2, out = And4);
+    And16to1(a = And4, b = true, out = cand);
+    And16(a = d, b = cand, out = outd);
+  //Or
+    Or16(a = outa, b = outb, out = Orab);
+    Or16(a = Orab, b = outc, out = Orabc);
+    Or16(a = Orabc, b = outd, out = out);
+}

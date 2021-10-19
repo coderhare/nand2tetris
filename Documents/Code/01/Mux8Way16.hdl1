@@ -1,0 +1,178 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux8Way16.hdl
+
+/**
+ * 8-way 16-bit multiplexor:
+ * out = a if sel == 000
+ *       b if sel == 001
+ *       etc.
+ *       h if sel == 111
+ */
+
+CHIP Mux8Way16 {
+
+  IN a[16], b[16], c[16], d[16],
+
+​    e[16], f[16], g[16], h[16],
+
+​    sel[3];
+
+  OUT out[16];
+
+
+
+  PARTS:
+
+  // Put your code here:
+
+  //a
+
+  Xor(a = true, b = sel[0], out = Xora1);
+
+  Xor(a = true, b = sel[1], out = Xora2);
+
+  Xor(a = true, b = sel[2], out = Xora3);
+
+  And(a = Xora1, b = Xora2, out = Xora4);
+
+  And(a = Xora4, b = Xora3, out = And1);
+
+  And16to1(And1, b = true, out = Anda);
+
+  And16(a = Anda, b = true, out = outa);
+
+  //b
+
+  Xor(a = false, b = sel[0], out = Xorb1);
+
+  Xor(a = true, b = sel[1], out = Xorb2);
+
+  Xor(a = true, b = sel[2], out = Xorb3);
+
+  And(a = Xorb1, b = Xorb2, out = Xorb4);
+
+  And(a = Xorb4, b = Xorb3, out = And2);
+
+  And16to1(And2, b = true, out = Andb);
+
+  And16(a = Andb, b = true, out = outb);
+
+  //c
+
+  Xor(a = true, b = sel[0], out = Xorc1);
+
+  Xor(a = false, b = sel[1], out = Xorc2);
+
+  Xor(a = true, b = sel[2], out = Xorc3);
+
+  And(a = Xorc1, b = Xorc2, out = Xorc4);
+
+  And(a = Xorc4, b = Xorc3, out = And3);
+
+  And16to1(And3, b = true, out = Andc);
+
+  And16(a = Andc, b = true, out = outc);
+
+ //d
+
+  Xor(a = false, b = sel[0], out = Xord1);
+
+  Xor(a = false, b = sel[1], out = Xord2);
+
+  Xor(a = true, b = sel[2], out = Xord3);
+
+  And(a = Xord1, b = Xord2, out = Xord4);
+
+  And(a = Xord4, b = Xord3, out = And4);
+
+  And16to1(And4, b = true, out = Andd);
+
+  And16(a = Andd, b = true, out = outd);
+
+  //e
+
+  Xor(a = true, b = sel[0], out = Xore1);
+
+  Xor(a = true, b = sel[1], out = Xore2);
+
+  Xor(a = false, b = sel[2], out = Xore3);
+
+  And(a = Xore1, b = Xore2, out = Xore4);
+
+  And(a = Xore4, b = Xore3, out = And5);
+
+  And16to1(And5, b = true, out = Ande);
+
+  And16(a = Ande, b = true, out = oute);
+
+  //f
+
+  Xor(a = false, b = sel[0], out = Xorf1);
+
+  Xor(a = true, b = sel[1], out = Xorf2);
+
+  Xor(a = false, b = sel[2], out = Xorf3);
+
+  And(a = Xorf1, b = Xorf2, out = Xorf4);
+
+  And(a = Xorf4, b = Xorf3, out = And6);
+
+  And16to1(And6, b = true, out = Andf);
+
+  And16(a = Andf, b = true, out = outf);
+
+//g
+
+  Xor(a = true, b = sel[0], out = Xorg1);
+
+  Xor(a = false, b = sel[1], out = Xorg2);
+
+  Xor(a = false, b = sel[2], out = Xorg3);
+
+  And(a = Xorg1, b = Xorg2, out = Xorg4);
+
+  And(a = Xorg4, b = Xorg3, out = And7);
+
+  And16to1(And7, b = true, out = Andg);
+
+  And16(a = Andg, b = true, out = outg);
+
+  //h
+
+  Xor(a = false, b = sel[0], out = Xorh1);
+
+  Xor(a = false, b = sel[1], out = Xorh2);
+
+  Xor(a = false, b = sel[2], out = Xorh3);
+
+  And(a = Xorh1, b = Xorh2, out = Xorh4);
+
+  And(a = Xorh4, b = Xorh3, out = And8);
+
+  And16to1(And8, b = true, out = Andh);
+
+  And16(a = Andh, b = true, out = outh);
+
+
+
+
+
+//Or
+
+Or(a = outa, b = outb, out = Or1);
+
+Or(a = Or1, b = outc, out = Or2);
+
+Or(a = Or2, b = outd, out = Or3);
+
+Or(a = Or3, b = oute, out = Or4);
+
+Or(a = Or4, b = outf, out = Or5);
+
+Or(a = Or5, b = outg, out = Or6):
+
+Or(a = Or6, b = outh, out = out);
+
+}}

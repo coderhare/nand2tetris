@@ -1,0 +1,24 @@
+CHIP And16to1 {
+    IN a, b[16];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here:
+    And(a = a, b = true, out = out[0]);
+    And(a = a, b = true, out = out[1]);
+    And(a = a, b = true, out = out[2]);
+    And(a = a, b =  true, out = out[3]);
+    And(a = a, b = true, out = out[4]);
+    And(a = a, b = true, out = out[5]);
+    And(a = a, b = true, out = out[6]);
+    And(a = a, b = true, out = out[7]);
+    And(a = a, b = true, out = out[8]);
+    And(a = a, b = true, out = out[9]);
+    And(a = a, b = true, out = out[10]);
+    And(a = a, b = true, out = out[11]);
+    And(a = a, b = true, out = out[12]);
+    And(a = a, b = true, out = out[13]);
+    And(a = a, b = true, out = out[14]);
+    And(a = a, b = true, out = out[15]);
+}
+

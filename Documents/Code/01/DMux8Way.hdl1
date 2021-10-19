@@ -1,0 +1,76 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/DMux8Way.hdl
+
+/**
+ * 8-way demultiplexor:
+ * {a, b, c, d, e, f, g, h} = {in, 0, 0, 0, 0, 0, 0, 0} if sel == 000
+ *                            {0, in, 0, 0, 0, 0, 0, 0} if sel == 001
+ *                            etc.
+ *                            {0, 0, 0, 0, 0, 0, 0, in} if sel == 111
+ */
+
+CHIP DMux8Way {
+    IN in, sel[3];
+    OUT a, b, c, d, e, f, g, h;
+
+    PARTS:
+    // Put your code here:
+    //a
+    Xor(a = true, b = sel[0], out = Xora1);
+    Xor(a = true, b = sel[1], out = Xora2);
+    Xor(a = true, b = sel[2], out = Xora3);
+    And(a = Xora1, b = Xora2, out = Xora4);
+    And(a = Xora4, b = Xora3, out = And1);
+    And(a = And1, b = in, out = a);
+    //b
+    Xor(a = false, b = sel[0], out = Xorb1);
+    Xor(a = true, b = sel[1], out = Xorb2);
+    Xor(a = true, b = sel[2], out = Xorb3);
+    And(a = Xorb1, b = Xorb2, out = Xorb4);
+    And(a = Xorb4, b = Xorb3, out = And2);
+    And(a = And2, b = in, out = b);
+    //c
+    Xor(a = true, b = sel[0], out = Xorc1);
+    Xor(a = false, b = sel[1], out = Xorc2);
+    Xor(a = true, b = sel[2], out = Xorc3);
+    And(a = Xorc1, b = Xorc2, out = Xorc4);
+    And(a = Xorc4, b = Xorc3, out = And3);
+    And(a = And3, b = in, out = c);
+    //d
+    Xor(a = false, b = sel[0], out = Xord1);
+    Xor(a = false, b = sel[1], out = Xord2);
+    Xor(a = true, b = sel[2], out = Xord3);
+    And(a = Xord1, b = Xord2, out = Xord4);
+    And(a = Xord4, b = Xord3, out = And4);
+    And(a = And4, b = in, out = d);
+    //e
+    Xor(a = true, b = sel[0], out = Xore1);
+    Xor(a = true, b = sel[1], out = Xore2);
+    Xor(a = false, b = sel[2], out = Xore3);
+    And(a = Xore1, b = Xore2, out = Xore4);
+    And(a = Xore4, b = Xore3, out = And5);
+    And(a = And5, b = in, out = e);
+    //f
+    Xor(a = false, b = sel[0], out = Xorf1);
+    Xor(a = true, b = sel[1], out = Xorf2);
+    Xor(a = false, b = sel[2], out = Xorf3);
+    And(a = Xorf1, b = Xorf2, out = Xorf4);
+    And(a = Xorf3, b = Xorf4, out = And6);
+    And(a = And6, b = in, out = f);
+    //g
+    Xor(a = true, b = sel[0], out = Xorg1);
+    Xor(a = false, b = sel[1], out = Xorg2);
+    Xor(a = false, b = sel[2], out = Xorg3);
+    And(a = Xorg1, b = Xorg2, out = Xorg4);
+    And(a = Xorg4, b = Xorg3, out = And7);
+    And(a = And7, b = in, out = g);
+    //h
+    Xor(a = false, b = sel[0], out = Xorh1);
+    Xor(a = false, b = sel[1], out = Xorh2);
+    Xor(a = false, b = sel[2], out = Xorh3);
+    And(a = Xorh1, b = Xorh2, out = Xorh4);
+    And(a = Xorh3, b = Xorh4, out = And8);
+    And(a = And8, b = in, out = h);
+}
