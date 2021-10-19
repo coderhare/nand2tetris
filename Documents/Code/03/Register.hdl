@@ -1,0 +1,82 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/a/Register.hdl
+
+/**
+ * 16-bit register:
+ * If load[t] == 1 then out[t+1] = in[t]
+ * else out does not change
+ */
+
+CHIP Register {
+    IN in[16], load;
+    OUT out[16];
+
+    PARTS:
+    // Put your code here:
+    Mux(a = last0, b = in[0], sel = load, out = out0);
+    DFF(in = out0, out = out[0], out = last0);
+    Mux(a = last1, b = in[1], sel = load, out = out1);
+    DFF(in = out1, out = out[1], out = last1); 
+    
+    Mux(a = last2, b = in[2], sel = load,out = out2);
+
+    DFF(in = out2, out = out[2], out = last2);
+Mux(a = last3, b = in[3], sel = load, out = out3);
+
+DFF(in = out3 , out = out[3], out = last3);
+
+Mux(a = last4, b = in[4], sel = load, out = out4);
+
+DFF(in = out4 , out = out[4], out = last4);
+
+Mux(a = last5, b = in[5], sel = load, out = out5);
+
+DFF(in = out5 , out = out[5], out = last5);
+
+Mux(a = last6, b = in[6], sel = load, out = out6);
+
+DFF(in = out6 , out = out[6], out = last6);
+
+Mux(a = last7, b = in[7],sel = load,  out = out7);
+
+DFF(in = out7, out = out[7], out = last7);
+
+Mux(a = last8, b = in[8],sel = load,  out = out8);
+
+DFF(in = out8 , out = out[8], out = last8);
+
+
+Mux(a = last9, b = in[9],sel = load,  out = out9);
+
+
+
+DFF(in = out9 , out = out[9], out = last9);
+
+Mux(a = last10, b = in[10],sel = load, out = out10);
+
+DFF(in = out10 , out = out[10], out = last10);
+
+Mux(a = last11, b = in[11],sel = load, out = out11);
+
+DFF(in = out11 , out = out[11], out = last11);
+
+Mux(a = last12, b = in[12],sel = load, out = out12);
+
+DFF(in = out12 , out = out[12], out = last12);
+
+Mux(a = last13, b = in[13],sel = load, out = out13);
+
+DFF(in = out13 , out = out[13], out = last13);
+
+Mux(a = last14, b = in[14],sel = load, out = out14);
+
+DFF(in = out14 , out = out[14], out = last14);
+
+Mux(a = last15, b = in[15], sel = load, out = out15);
+DFF(in = out15, out = out[15], out = last15);
+
+
+
+}
