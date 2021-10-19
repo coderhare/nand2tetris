@@ -21,8 +21,7 @@
 | ---------------------- | --------- |
 | **第一章：基本门电路**                      |  [**note1**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%9F%BA%E6%9C%AC%E9%97%A8%E7%94%B5%E8%B7%AF.md)         |
 | **第二章：运算器件**                       | [**note2**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%90%E7%AE%97%E5%99%A8%E4%BB%B6.md)          |
-|                        |           |
-|                        |           |
+|  **第三章: Memory Unit**                      | [**note3**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9AMemory%20Unit.md)          |
 | **第四章：Hack Machine language**                       |  [**note4**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%10%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%10Hack%20Machine%20language.md)         |
 |                        |           |
 | **第六章：Hack Assembler** | [**note6**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9AHack%20Assembler.md) |
