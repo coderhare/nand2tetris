@@ -19,7 +19,7 @@
 
 
 
-|                        |           |
+|  第一章：基本门电路                      |  [note1](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%9F%BA%E6%9C%AC%E9%97%A8%E7%94%B5%E8%B7%AF.md)         |
 | ---------------------- | --------- |
 |                        |           |
 |                        |           |
