@@ -71,3 +71,6 @@
 非常简单的连线，按着这个图做即可,代码很短
 
 ![image-20211019164730890](https://github.com/coderhare/nand2tetris/blob/main/Images/CHIP_COMPUTER.png)
+
+> 写在最后，如果你已经完成了整个hack computer的实现，恭喜你！你已经将硬件部分处理完了.
+> 想必你对计算机底层是01字符串有了更深刻的理解
