@@ -17,16 +17,15 @@
 > 本书难度较大的地方：硬件部分CPU，软件部分后面内容。
 > 我的源码可以通过所有test，也是通过我的推导一步步得到的，尽管它不能保证100%正确，但应该大体上问题不大。如有错误，烦请指正，不胜感激
 
-
-
-|  第一章：基本门电路                      |  [note1](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%9F%BA%E6%9C%AC%E9%97%A8%E7%94%B5%E8%B7%AF.md)         |
+|chapter                 |note|
 | ---------------------- | --------- |
+| **第一章：基本门电路**                      |  [**note1**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%9F%BA%E6%9C%AC%E9%97%A8%E7%94%B5%E8%B7%AF.md)         |
+| **第二章：运算器件**                       | [**note2**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E8%BF%90%E7%AE%97%E5%99%A8%E4%BB%B6.md)          |
 |                        |           |
 |                        |           |
+| **第四章：Hack Machine language**                       |  [**note4**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%10%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%10Hack%20Machine%20language.md)         |
 |                        |           |
-| 第四章：Hack Machine language                       |  [note4](https://github.com/coderhare/nand2tetris/blob/main/Notes/%10%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%10Hack%20Machine%20language.md)         |
-|                        |           |
-| 第六章：Hack Assembler | [note6]() |
+| **第六章：Hack Assembler** | [**note6**](https://github.com/coderhare/nand2tetris/blob/main/Notes/%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9AHack%20Assembler.md) |
 |                        |           |
 |                        |           |
 |                        |           |
